@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    <mat-toolbar class="toolbarNav">
+      <button mat-flat-button routerLink="/top-artists" routerLinkActive="active-link">
+        <mat-icon class="material-icons color_blue">
+          star_border</mat-icon>
+        <span>Top Artists</span>
+      </button>
+      <button mat-flat-button routerLink="/top-tracks" routerLinkActive="active-link">
+        <mat-icon class="material-icons color_blue">favorite_border
+        </mat-icon>
+        <span>Top Tracks</span>
+      </button>
+      <button mat-flat-button routerLink="/history" routerLinkActive="active-link">
+        <mat-icon class="material-icons color_blue">history</mat-icon>
+        <span>History</span>
+      </button>
+    </mat-toolbar>
+  </footer>
+</body>
+
+</html>
